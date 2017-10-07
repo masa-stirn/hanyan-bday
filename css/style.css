@@ -1,0 +1,200 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/red-roses-background.jpeg");
+}
+
+audio {
+    display: none;
+}
+
+div#svg {
+    margin-top: 4em;
+    margin-left: 2em;
+    width: 600px;
+    height: 600px;
+    display: block;
+}
+
+#remove-svg img {
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 15%;
+    left: 50vw;
+}
+.btnBack img {
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 70%;
+    left: 25vw;
+    transform: rotateY(180deg);
+}
+
+
+.btnStart {
+    opacity: 0;
+}
+
+.btnAppear {
+    animation: appear 3s 5s linear forwards;
+    cursor: pointer;
+}
+.btnAppear2 {
+    animation: appear 3s 15s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+
+div.polaroid img {
+    width: 280px;
+}
+div.polaroid {
+    width: 280px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgba(1,1,1,0.5);
+}
+
+div.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+.pic1 {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    opacity: 0;
+}
+.pic2 {
+    position: absolute;
+    top: 220px;
+    left: 330px;
+    opacity: 0;
+}
+.pic3 {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    transform: rotate(3deg);
+    opacity: 0;
+}
+.pic {
+    animation: opac 4s forwards;
+}
+@keyframes opac {
+    to {
+        opacity: 1;
+    }
+}
+p {
+    font-family: cursive;
+    text-align: center;
+    font-size:2em;
+    padding: 0;
+    margin: 0;
+}
+
+.poem {
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top:15%;
+    left: 2%;
+    opacity: 0;
+    z-index: -10;
+}
+
+.candles {
+    width: 600px;
+    height: 315px;
+    position: absolute;
+    top:15%;
+    left: 5%;
+    opacity: 0;
+    z-index: -20;
+    box-shadow: 3px 0px 30px 10px wheat;
+}
+
+.present1, .present2 {
+    position: absolute;
+    width: 500px;
+    left: 5%;
+    top: 25%;
+    opacity: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.tickets {
+    z-index: -8;
+    cursor: pointer;
+}
+
+.ticket1 {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    box-shadow: 5px 5px 2px rgba(1,1,1,0.5);
+    transform: rotate(7deg);
+}
+.ticket2 {
+    position: absolute;
+    top: 260px;
+    left: 150px;
+    box-shadow: 5px 5px 2px rgba(1,1,1,0.5);
+    transform: rotate(-7deg);
+}
+
+.hidetickets {
+    opacity: 0;
+}
+
+
+.poemShow {
+   animation: see 4s forwards;
+}
+
+@keyframes see {
+    to {
+        opacity: 1;
+    }
+}
+
+.pic:hover {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.remove {
+    display: none;
+    z-index: -21;
+}
+
+.add {
+    display: block;
+    z-index:-22;
+}
+
+.emlarge {
+    width: 600px;
+}
+
+
