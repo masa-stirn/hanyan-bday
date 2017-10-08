@@ -130,7 +130,7 @@ p {
     height: 315px;
     position: absolute;
     top:15%;
-    left: 5%;
+    left: 15%;
     opacity: 0;
     z-index: -20;
     box-shadow: 3px 0px 30px 10px wheat;
@@ -139,7 +139,7 @@ p {
 .present1, .present2 {
     position: absolute;
     width: 500px;
-    left: 5%;
+    left: 10%;
     top: 25%;
     opacity: 0;
     z-index: 5;

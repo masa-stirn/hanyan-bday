@@ -14,13 +14,13 @@ let divPres2For = document.querySelector(".div-present-2");
 let divTickets = document.querySelector(".div-tickets");
 let divCandles = document.querySelector(".div-candles");
 let divPoem = document.querySelector(".div-poem");
+let bgsound = document.querySelector("#bgsound");
 
 function pageLoad(){
     console.log("function: pageLoad")
     console.log("function: svgWrites")
     console.log("TODO: background sound");
-    let bgsound = document.querySelector("#bgsound");
-    //bgsound.play();
+    bgsound.play();
     console.log("function: btnAppear")
     playBtn.classList.add("btnAppear");
     playBtn.addEventListener('click', function1Done);
@@ -82,6 +82,11 @@ function pic2event (){
     let candleSong = document.querySelector("#hbday");
     bgsound.pause();
     candleSong.play();
+    let yay = document.querySelector("#yay");
+    setTimeout(playYay, 14500);
+    function playYay (){
+        yay.play();
+    }
     backBtn.classList.add("btnAppear2");
     backBtn.addEventListener('click', pic2eventDone);
         }
@@ -94,6 +99,7 @@ function pic2eventDone(){
     pics[0].classList.add("pic");
     pics[1].classList.add("pic");
     pics[2].classList.add("pic");
+    bgsound.play();
 }
 
 if(pics[2].classList.contains("pic")){
@@ -140,6 +146,8 @@ function pic3event (){
 function pic3eventDone(){
     tickets.classList.remove("poemShow");
     backBtn.classList.remove("btnAppear2");
+    divTickets.classList.remove("div-tickets-forward");
+    a.classList.remove("add");
     pics[0].classList.add("pic");
     pics[1].classList.add("pic");
     pics[2].classList.add("pic");
