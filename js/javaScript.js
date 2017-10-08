@@ -12,6 +12,8 @@ let a = document.querySelector("a");
 let divPres1For = document.querySelector(".div-present-1");
 let divPres2For = document.querySelector(".div-present-2");
 let divTickets = document.querySelector(".div-tickets");
+let divCandles = document.querySelector(".div-candles");
+let divPoem = document.querySelector(".div-poem");
 
 function pageLoad(){
     console.log("function: pageLoad")
@@ -48,6 +50,7 @@ function pic1event (){
         pics[2].classList.remove("pic");
         console.log("TODO: poemEnter");
         poem.classList.add("poemShow");
+    divPoem.classList.add("div-poem-forward");
     backBtn.classList.add("btnAppear");
     backBtn.addEventListener('click', pic1eventDone);
         }
@@ -56,6 +59,7 @@ function pic1event (){
 
 function pic1eventDone(){
     poem.classList.remove("poemShow");
+    divPoem.classList.remove("div-poem-forward");
     backBtn.classList.remove("btnAppear");
     pics[0].classList.add("pic");
     pics[1].classList.add("pic");
@@ -74,6 +78,7 @@ function pic2event (){
         pics[2].classList.remove("pic");
         console.log("TODO: candlesEnter");
         candles.classList.add("poemShow");
+    divCandles.classList.add("div-candles-forward");
     let candleSong = document.querySelector("#hbday");
     bgsound.pause();
     candleSong.play();
@@ -85,6 +90,7 @@ function pic2event (){
 function pic2eventDone(){
     candles.classList.remove("poemShow");
     backBtn.classList.remove("btnAppear2");
+    divCandles.classList.remove("div-candles-forward");
     pics[0].classList.add("pic");
     pics[1].classList.add("pic");
     pics[2].classList.add("pic");
@@ -132,7 +138,7 @@ function pic3event (){
 }
 
 function pic3eventDone(){
-    candles.classList.remove("poemShow");
+    tickets.classList.remove("poemShow");
     backBtn.classList.remove("btnAppear2");
     pics[0].classList.add("pic");
     pics[1].classList.add("pic");

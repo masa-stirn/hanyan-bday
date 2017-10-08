@@ -24,15 +24,19 @@ div#svg {
     left: 50vw;
 }
 .btnBack img {
+     width: 90px;
+    height: 80px;
+    transform: rotateY(180deg);
+}
+
+.btnForward {
     width: 90px;
     height: 80px;
     position: absolute;
     top: 70%;
     left: 25vw;
-    transform: rotateY(180deg);
+    z-index: 300;
 }
-
-
 .btnStart {
     opacity: 0;
 }
@@ -142,7 +146,7 @@ p {
     cursor: pointer;
 }
 
-.div-present-1, .div-present-2, .div-tickets {
+.div-present-1, .div-present-2, .div-tickets, .div-candles, .div-poem {
     position: absolute;
     top: 0;
     left: 0;
@@ -161,6 +165,14 @@ p {
 .div-tickets-forward {
     z-index: 130;
 }
+.div-candles-forward {
+    z-index: 140;
+}
+
+.div-poem-forward {
+    z-index: 150;
+}
+
 .tickets {
     cursor: pointer;
 }
