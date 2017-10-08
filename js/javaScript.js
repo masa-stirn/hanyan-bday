@@ -11,6 +11,7 @@ let tickets = document.querySelector(".tickets");
 let a = document.querySelector("a");
 let divPres1For = document.querySelector(".div-present-1");
 let divPres2For = document.querySelector(".div-present-2");
+let divTickets = document.querySelector(".div-tickets");
 
 function pageLoad(){
     console.log("function: pageLoad")
@@ -117,6 +118,7 @@ function pic3event (){
             present2.classList.remove("poemShow");
             divPres2For.classList.remove("div-present-2-forward");
             tickets.classList.add("poemShow");
+            divTickets.classList.add("div-tickets-forward");
             a.classList.add("add");
             tickets.addEventListener('click', enlargeTickets);
         }
