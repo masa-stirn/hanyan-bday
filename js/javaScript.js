@@ -9,6 +9,8 @@ let present1 = document.querySelector(".present1");
 let present2 = document.querySelector(".present2");
 let tickets = document.querySelector(".tickets");
 let a = document.querySelector("a");
+let divPres1For = document.querySelector(".div-present-1");
+let divPres2For = document.querySelector(".div-present-2");
 
 function pageLoad(){
     console.log("function: pageLoad")
@@ -98,19 +100,22 @@ function pic3event (){
         pics[2].classList.remove("pic");
         console.log("TODO: present enter");
         present1.classList.add("poemShow");
-
+        divPres1For.classList.add("div-present-1-forward");
         present1.addEventListener('click', pic3halfeventDone);
 
         function pic3halfeventDone (){
             console.log("TODO: hide present 1");
             present1.classList.remove("poemShow");
+            divPres1For.classList.remove("div-present-1-forward");
             console.log("TODO: show present 2");
             present2.classList.add("poemShow");
+            divPres2For.classList.add("div-present-2-forward");
             present2.addEventListener('click', pic3ticket);
             }
         function pic3ticket () {
             console.log("TODO: hide present 2");
             present2.classList.remove("poemShow");
+            divPres2For.classList.remove("div-present-2-forward");
             tickets.classList.add("poemShow");
             a.classList.add("add");
             tickets.addEventListener('click', enlargeTickets);

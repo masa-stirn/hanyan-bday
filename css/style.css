@@ -143,6 +143,23 @@ p {
     cursor: pointer;
 }
 
+.div-present-1, .div-present-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50vw;
+    z-index: -30;
+}
+.div-present-1-forward {
+    z-index: 110;
+}
+
+.div-present-2-forward {
+    z-index: 120;
+}
+
+
 .tickets {
     z-index: -8;
     cursor: pointer;
